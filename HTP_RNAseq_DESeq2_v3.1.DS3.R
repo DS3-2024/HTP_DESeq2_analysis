@@ -49,7 +49,6 @@
 # 7.  Get results for comparison(s) of interest  
 # 8.  Export results
 # 9.  Extra plots
-### SEPARATE SCRIPT ?? ### 
 # 10. Volcano plot(s)
 # 11. Manhattan plot(s)
 # 12. Individual gene plots
@@ -827,13 +826,6 @@ dds_multi4 |> ggplotDispEsts()
 res_simple_T21_vs_Control |> plotPvals()
 res_multi_SexAgeSource_T21_vs_Control |> plotPvals()
 #
-
-
-
-########################################
-### BREAK HERE TO SEPARATE SCRIPT ???###
-########################################
-
 
 
 # 10. labelled volcano plots ----
