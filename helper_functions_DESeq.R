@@ -266,7 +266,7 @@ get_results_tbl <- function(x, contrast = "", cooks = TRUE, ind_filt = TRUE, shr
   # use of apeglm shrinkage
   message(paste0("1. Re-leveling '", contrast[1], "' with '", contrast[3], "' as reference level"))
   # no longer hardcoded - see ?`SummarizedExperiment-class` for info on accessors for colData
-  dds[[contrast[1],]] <- dds[[contrast[1],]] |> relevel(contrast[3])
+  x[[contrast[1],]] <- x[[contrast[1],]] |> relevel(contrast[3])
   #
   message("2. Running negative binomial Wald test")
   x <- x %>% nbinomWaldTest(quiet=TRUE)
